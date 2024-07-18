@@ -1,25 +1,7 @@
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import { ListGroup } from 'react-bootstrap';
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setModules } from './moduleSlice';
 
-const options = [
-    {
-        name: 'Modules',
-        scroll: true,
-        backdrop: true,
-    },
-];
-const modules_item = ["module1", "module2", "module3", "module4", "module5", "module6"];
-const comp = modules_item.map(item => {
-    return (
-        <ListGroup action >
-            <button><ListGroup.Item variant="secondary">{item}</ListGroup.Item></button>
-        </ListGroup>)
-})
 
 function Dashboard() {
     let _data = {

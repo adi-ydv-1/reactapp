@@ -1,4 +1,3 @@
-import Form from "./Login"
 import Dropdown from "react-bootstrap/Dropdown";
 function Forgotpassword() {
     return (
